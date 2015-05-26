@@ -1,0 +1,28 @@
+<!-- Problem Grid Section -->
+    <section id="problem">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Problem</h2>
+                    <h3 class="section-subheading text-muted">In this connected world we miss out some of the subtlties that adds up to our health.</h3>
+                </div>
+            </div>
+            <div class="row">
+            {% for post in site.posts %}
+                <div class="col-md-4 col-sm-6 problem-item">
+                    <a href="#problemModal{{ post.modal-id }}" class="problem-link" data-toggle="modal">
+                        <div class="problem-hover">
+                            <div class="problem-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/problem/{{ post.thumbnail }}" class="img-responsive" alt="">
+                    </a>
+                    <div class="problem-caption">
+                        <h4>{{ post.title }}</h4>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>

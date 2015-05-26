@@ -1,0 +1,88 @@
+url: http://127.0.0.1:4000 #https://catalanlabs.com
+
+# Site settings
+title: Portuspine
+email: jerric@catalanlabs.com
+description: "We make preventive care wearable device, that'll help you maintain posture by notifying you when you are slouching"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 3F51B5
+  secondary: 1A237E  
+  secondary-dark: 333
+
+# Team names, titles and social links
+people:
+- name: Sangeet S
+  pic: 1
+  position: Innovationist
+  desc: 'Impossibilities, I dream'
+  social:
+    - title: twitter
+      url: https://twitter.com/sangeetsatheesh
+    - title: linkedin
+      url: https://linkedin.com/in/sangeetsatheesan
+
+- name: Jerric Lyns John
+  pic: 2
+  position: Technologist
+  desc: 'Experienced dreamer and self proclaimed rocket scientist'
+  social:
+    - title: twitter
+      url: https://twitter.com/jerriclynsjohn
+    - title: rss
+      url: http://swiftjuggler.com
+    - title: linkedin
+      url: https://linkedin.com/in/jerriclynsjohn
+
+- name: Sandeep S
+  pic: 3
+  position: Maverick
+  desc: 'The realist who puts the heat on these two dreamers'
+  social:
+    - title: twitter
+      url: https://twitter.com/dachandu
+    - title: linkedin
+      url: https://linkedin.com/in/sandeepsatheesh
+
+- name: Arun Balajee V
+  pic: 4
+  position: Vision Wizard
+  desc: 'An enthusiast caught in the middle of reality and make believe'
+  social:
+    - title: twitter
+      url: https://twitter.com/arunbalajeev
+    - title: institution
+      url: http://people.epfl.ch/arun.vasudevan
+    - title: linkedin
+      url: https://linkedin.com/in/arunbalajeev
+
+- name: Prof. Francesc Moll Echeto
+  pic: 5
+  position: Mentor
+  desc: 'Universitat Politècnica de Catalunya, Barcelona'
+  social:
+    - title: twitter
+      url: https://twitter.com/FrancescMoll
+    - title: institution
+      url: http://hipics.upc.edu/people/faculty/francesc-moll
+    - title: linkedin
+      url: https://linkedin.com/in/francescmoll
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/catalanlabs
+  - title: linkedin
+    url: https://linkedin.com/company/catalan-labs
+  - title: rss
+    url: https://medium.com/@catalanlabs
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: #
+  - line: #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
