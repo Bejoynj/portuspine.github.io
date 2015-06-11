@@ -6,7 +6,6 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.color.secondary-dark }};
 }
 
@@ -53,7 +52,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Ubuntu-Bold",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -72,7 +71,7 @@ h6 {
 .btn-primary {
     border-color: #{{ site.color.primary }};
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Ubuntu";
     font-weight: 700;
     color: #fff;
     background-color: #{{ site.color.primary }};
@@ -176,21 +175,26 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #{{ site.color.primary }};
+    font-family: "Ubuntu-Bold","Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: white;
+    text-transform: uppercase;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #{{ site.color.secondary }};
+    color: white;
+    text-transform: uppercase;
 }
+
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
 }
-
+.navbar-toggle .navbar-brand{
+    text-transform: uppercase;
+}
 .navbar-default .navbar-toggle {
     border-color: #{{ site.color.primary }};
     background-color: #{{ site.color.primary }};
@@ -246,6 +250,7 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        text-transform: uppercase;
     }
 
     .navbar-default .navbar-nav>.active>a {
@@ -922,4 +927,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
+}
+.img-display {
+    display: inline;
+}
+.infographic{
+    padding-bottom: 90px;
 }
