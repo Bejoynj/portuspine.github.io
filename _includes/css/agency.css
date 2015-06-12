@@ -372,6 +372,89 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+.problem-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.problem-box .problem-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
+    background: rgba({{ site.color.primary | hex_to_rgb | join: ',' }}, .9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.problem-box .problem-box-caption .problem-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.problem-box .problem-box-caption .problem-box-caption-content .project-category,
+.problem-box .problem-box-caption .problem-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.problem-box .problem-box-caption .problem-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.problem-box .problem-box-caption .problem-box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.problem-box:hover .problem-box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .problem-box .problem-box-caption .problem-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .problem-box .problem-box-caption .problem-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+.no-padding {
+    padding: 150px 0 0 0;
+}
+
+.slight-padding {
+    padding: 50px 0px 50px 0px;
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 #problem .problem-item {
     right: 0;
     margin: 0 0 15px;
