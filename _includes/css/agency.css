@@ -3,7 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@font-face{
+    font-family:"Ubuntu-Bold";
+    src:url(/font/Ubuntu/Ubuntu-Bold.ttf);
+}
 body {
     overflow-x: hidden;
     color: #{{ site.color.secondary-dark }};
@@ -933,4 +936,21 @@ body {
 }
 .infographic{
     padding-bottom: 90px;
+}
+
+.center-team {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member {
+    max-width: 273px;
+}
+
+.team-member img:nth-child(1){
+    margin: 0px 13px;
+}
+.minheight {
+    min-height: 47px;
 }
