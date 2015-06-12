@@ -388,7 +388,7 @@ section h3.section-subheading {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
+    background: rgba(65,81,181,.9); /* Fallback when no plugin support */
     background: rgba({{ site.color.primary | hex_to_rgb | join: ',' }}, .9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -475,7 +475,7 @@ section h3.section-subheading {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
+    background: rgba(65,81,181,.9); /* Fallback when no plugin support */
     background: rgba({{ site.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
