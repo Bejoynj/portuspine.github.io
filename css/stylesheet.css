@@ -1,0 +1,203 @@
+
+
+.button, button, input[type="submit"], input[type="button"] {
+  display: inline-block;
+  margin: .5em 0;
+  padding: .5em 1em;
+  font-size: 1em;
+  border: 1px solid #2e8ae6;
+  border-bottom-color: #ca3c29;
+  border-radius: 2px;
+  background-color: #2e8ae6;
+  color: #f9f9f9;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase; }
+  .button:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus {
+    background-color: #ca3c29;
+    border-color: #ca3c29;
+    color: #f9f9f9;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15); }
+  .button:active, button:active, input[type="submit"]:active, input[type="button"]:active {
+    background-color: #b53525;
+    border-color: #b53525;
+    color: #f9f9f9; }
+  .button.working, button.working, input.working[type="submit"], input.working[type="button"] {
+    padding-left: 0; }
+    .button.working:before, button.working:before, input.working[type="submit"]:before, input.working[type="button"]:before {
+      content: "";
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin: 0 1em;
+      border-top: 2px solid currentColor;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid currentColor;
+      border-left: 2px solid transparent;
+      border-radius: 50%; }
+    .button.working, button.working, input.working[type="submit"], input.working[type="button"], .button.working:hover, button.working:hover, input.working[type="submit"]:hover, input.working[type="button"]:hover, .button.working:focus, button.working:focus, input.working[type="submit"]:focus, input.working[type="button"]:focus, .button.working:active, button.working:active, input.working[type="submit"]:active, input.working[type="button"]:active {
+      background-color: #b53525;
+      border-color: #b53525;
+      color: #eec4be;
+      cursor: wait;
+      pointer-events: none; }
+  .button.secondary, button.secondary, input.secondary[type="submit"], input.secondary[type="button"] {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.15);
+    color: currentcolor; }
+    .button.secondary:hover, button.secondary:hover, input.secondary[type="submit"]:hover, input.secondary[type="button"]:hover, .button.secondary:focus, button.secondary:focus, input.secondary[type="submit"]:focus, input.secondary[type="button"]:focus {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(0, 0, 0, 0.3);
+      color: currentcolor; }
+    .button.secondary:active, button.secondary:active, input.secondary[type="submit"]:active, input.secondary[type="button"]:active {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-color: rgba(0, 0, 0, 0.3);
+      color: currentcolor; }
+  .button.disabled, button.disabled, input.disabled[type="submit"], input.disabled[type="button"], button:disabled, input[type="submit"]:disabled, input[type="button"]:disabled, .button.disabled:hover, button.disabled:hover, input.disabled[type="submit"]:hover, input.disabled[type="button"]:hover, button:hover:disabled, input[type="submit"]:hover:disabled, input[type="button"]:hover:disabled, .button.disabled:focus, button.disabled:focus, input.disabled[type="submit"]:focus, input.disabled[type="button"]:focus, button:focus:disabled, input[type="submit"]:focus:disabled, input[type="button"]:focus:disabled, .button.disabled:active, button.disabled:active, input.disabled[type="submit"]:active, input.disabled[type="button"]:active, button:active:disabled, input[type="submit"]:active:disabled, input[type="button"]:active:disabled {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    filter: alpha(opacity=50);
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.3);
+    color: currentcolor;
+    cursor: default;
+    pointer-events: none; }
+
+
+
+/* font settings */
+/* colors */
+/* misc */
+/* font settings */
+/* colors */
+/* misc */
+/* font settings */
+/* colors */
+/* misc */
+/* base styles */
+body {
+  background: #f9f9f9;
+  color: #2d2d2d;
+  font: 16px/21px 'Lato', sans-serif, "Raleway", Candara, Calibri, Segoe, Optima, Arial, sans-serif }
+  @media only screen and (max-width: 27em) {
+    body {
+      font-size: 14px; } }
+
+a {
+  color: #2e8ae6;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #2E8AE6; }
+  a:active {
+    color: #601c14; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h1, h2, h3, h4 {
+  line-height: 1.5em;
+  font-family: 'Lato', sans-serif, "Raleway", Candara, Calibri, Segoe, Optima, Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: .5em; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.2em; }
+
+p {
+  margin: .5em 0; }
+
+
+
+/* mixins */
+/* style rules */
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+section {
+  padding: .5em; }
+  @media only screen and (min-width: 700px) {
+    section {
+      padding: 1em; } }
+
+
+a:focus, a:hover, a:active {
+  text-decoration: underline; }
+
+.button:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus, .button:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover, .button:active, button:active, input[type="submit"]:active, input[type="button"]:active {
+  text-decoration: none; }
+
+.section, .cover-content, .products, .team {
+  max-width: 60em;
+  margin: auto;
+  padding: 2em 1em; }
+
+.cover {
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f9f9f9; }
+  @media only screen and (min-device-width: 320px) {
+    .cover { } }
+  @media only screen and (min-device-width: 700px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px), only screen and (min--moz-device-pixel-ratio: 2) and (min-device-width: 320px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-device-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-device-width: 320px), only screen and (min-resolution: 192dpi) and (min-device-width: 320px), only screen and (min-resolution: 2dppx) and (min-device-width: 320px) {
+    .cover {} }
+  @media only screen and (min-width: 1300px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 700px), only screen and (min--moz-device-pixel-ratio: 2) and (min-device-width: 700px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-device-width: 700px), only screen and (min-device-pixel-ratio: 2) and (min-device-width: 700px), only screen and (min-resolution: 192dpi) and (min-device-width: 700px), only screen and (min-resolution: 2dppx) and (min-device-width: 700px) {
+    .cover {} }
+
+.cover-content {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+  .cover-content .logo {
+    padding: 2em; }
+  .cover-content .button, .cover-content button, .cover-content input[type="submit"], .cover-content input[type="button"] {
+    padding: .75em 1.5em;
+    border: 3px solid #f9f9f9;
+    background-color: transparent; }
+    .cover-content .button:focus, .cover-content button:focus, .cover-content input[type="submit"]:focus, .cover-content input[type="button"]:focus, .cover-content .button:hover, .cover-content button:hover, .cover-content input[type="submit"]:hover, .cover-content input[type="button"]:hover, .cover-content .button:active, .cover-content button:active, .cover-content input[type="submit"]:active, .cover-content input[type="button"]:active {
+      background-color: #f9f9f9;
+      color: #2e8ae6; }
+
+/* Cover for 404 page */
+.cover404 {
+  background-image: url(../../img/404.gif);
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f9f9f9; }
